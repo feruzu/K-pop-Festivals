@@ -310,8 +310,6 @@ template {
 html {
   font-size: 62.5%;
   box-sizing: border-box;
-  width: 100%;
-  height: 100vh;
 }
 
 *,
@@ -330,6 +328,7 @@ body {
 p {
   font-size: 2rem;
   color: #262626;
+  line-height: 1.5;
 }
 
 .contenedor {
@@ -356,6 +355,11 @@ h2 {
 
 h3 {
   font-size: 3rem;
+}
+
+img {
+  max-width: 100%;
+  display: block;
 }
 
 .header {
@@ -394,13 +398,14 @@ h3 {
   cursor: pointer;
 }
 .header ul {
+  z-index: 1;
   list-style: none;
   padding: 0;
   display: block;
   position: fixed;
   top: 7rem;
   left: -100%;
-  background-color: rgba(59, 59, 59, 0.979);
+  background-color: rgb(65, 65, 65);
   width: 100%;
   height: 100vh;
   right: 0;
@@ -467,4 +472,75 @@ h3 {
   width: 100%;
   left: 0;
   background: #262626;
+}
+
+.inicio {
+  height: 90vh;
+}
+
+.titulo {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+.titulo h2 {
+  font-size: 6rem;
+  margin: 0;
+  color: #262626;
+  margin-bottom: 1rem;
+}
+.titulo p {
+  font-size: 2.6rem;
+  font-weight: bold;
+  margin: 0;
+  color: #e6acb6;
+  background-color: #262626;
+  display: inline-block;
+  padding: 1rem 4rem;
+  border-radius: 10rem;
+}
+
+.festival {
+  padding: 5rem 0;
+}
+@media (min-width: 768px) {
+  .festival {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10rem 5rem;
+  }
+}
+
+.info-festival {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media (min-width: 768px) {
+  .info-festival {
+    margin-top: 0;
+  }
+}
+.info-festival h2 {
+  font-family: "Abril Fatface", cursive;
+  font-weight: 600;
+  margin: 0;
+  font-size: 3.5rem;
+}
+.info-festival .fecha {
+  color: #e6acb6;
+  font-weight: bold;
+  font-size: 2rem;
+  margin: 2rem 0rem;
+}
+.info-festival p {
+  font-size: 1.9rem;
+  margin: 0;
+  margin-bottom: 10rem;
+}
+@media (min-width: 768px) {
+  .info-festival p {
+    margin-bottom: 0;
+  }
 }
