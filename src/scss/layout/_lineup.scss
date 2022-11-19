@@ -12,8 +12,11 @@
 
 .lineup {
     text-align: center;
-    padding: 10rem 0;
+    padding: 0rem 0rem;
 
+    @include m.tablet {
+        padding: 7rem 0rem;
+    }
 
     h3,
     p {
@@ -22,6 +25,11 @@
 
     h3 {
         font-size: 4rem;
+        border-top: 1rem solid v.$rosa;
+        display: inline-block;
+        padding-top: 7rem;
+        
+        
     }
 
     .nombre-grupo {
@@ -36,7 +44,7 @@
     }
 
     .horario {
-        margin-bottom: 10rem;
+        margin-bottom: 6rem;
     }
 
     ul li {
@@ -59,7 +67,8 @@
         border-radius: 2rem;
         padding: 1rem;
         margin-bottom: 2rem;
-        margin: 2rem;
+        margin: 3rem;
+        
 
         @include m.tablet {
             margin: 0;

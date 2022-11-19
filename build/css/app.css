@@ -559,7 +559,12 @@ img {
 
 .lineup {
   text-align: center;
-  padding: 10rem 0;
+  padding: 0rem 0rem;
+}
+@media (min-width: 768px) {
+  .lineup {
+    padding: 7rem 0rem;
+  }
 }
 .lineup h3,
 .lineup p {
@@ -567,6 +572,9 @@ img {
 }
 .lineup h3 {
   font-size: 4rem;
+  border-top: 1rem solid #e6acb6;
+  display: inline-block;
+  padding-top: 7rem;
 }
 .lineup .nombre-grupo {
   font-weight: bold;
@@ -578,7 +586,7 @@ img {
   font-weight: bold;
 }
 .lineup .horario {
-  margin-bottom: 10rem;
+  margin-bottom: 6rem;
 }
 .lineup ul li {
   list-style: none;
@@ -597,7 +605,7 @@ img {
   border-radius: 2rem;
   padding: 1rem;
   margin-bottom: 2rem;
-  margin: 2rem;
+  margin: 3rem;
 }
 @media (min-width: 768px) {
   .lineup .horarios-contenedor {
