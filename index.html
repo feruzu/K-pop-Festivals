@@ -1,84 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>K-pop Festivals</title>
 
-    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:wght@400;600;700&display=swap"
+        rel="stylesheet">
 
     <link rel="stylesheet" href="build/css/app.css" />
 </head>
+
 <body>
-   <header class="contenedor header">
-    <div class=" info-header">
-        <h1>K-pop Festivals</h1>
+    <header class="contenedor header">
+        <div class=" info-header">
+            <h1>K-pop Festivals</h1>
+        </div>
+        <div class=" info-nav">
+            <input type="checkbox" id="check">
+            <label for="check" class="check-boton">
+                <i class="menu"><img src="./build/img/menu.svg" alt="menu"></i>
+            </label>
+
+            <ul class="navegacion-principal">
+                <li><a href="#">Grupos</a></li>
+                <li><a href="#">Galería</a></li>
+                <li><a href="#">Boletos</a></li>
+            </ul>
+        </div>
+    </header>
+
+
+    <div class="contenedor inicio">
+        <div class="titulo">
+            <h2>K-pop Festivals</h2>
+            <p>Conoce a tus idols</p>
+        </div>
     </div>
-    <div class=" info-nav">
-        <input type="checkbox" id="check">
-        <label for="check" class="check-boton">
-            <i class="menu"><img src="./build/img/menu.svg" alt="menu"></i>
-        </label>
+
+    <section class="contenedor festival">
+        <div class="img">
+            <picture>
+                <source srcset="build/img/Blackpink.webp" type="image/webp" />
+                <img src="build/img/Blackpink.jpg" alt="Blackpink" />
+            </picture>
+        </div>
+        <div class="info-festival">
+            <h2>BLACKPINK</h2>
+            <p class="fecha">Marzo 2022, Montevideo, Uruguay</p>
+            <p>
+                Duis vel eros eu ligula malesuada facilisis id sit amet quam. Aliquam eu neque suscipit, volutpat magna
+                at, laoreet lorem. Quisque a porttitor mauris.
+            </p>
+        </div>
+
+        <div class="img">
+            <picture>
+                <source srcset="build/img/Twice.webp" type="image/webp" />
+                <img src="build/img/Twice.jpg" alt="Twice" />
+            </picture>
+        </div>
+        <div class="info-festival">
+            <h2>TWICE</h2>
+            <p class="fecha">Mayo 2022, Montevideo, Uruguay</p>
+            <p>
+                Duis vel eros eu ligula malesuada facilisis id sit amet quam. Aliquam eu neque suscipit, volutpat magna
+                at, laoreet lorem. Quisque a porttitor mauris.
+            </p>
+        </div>
+
+        <div class="img">
+            <picture>
+                <source srcset="build/img/Mamamoo.webp" type="image/webp" />
+                <img src="build/img/Mamamoo.jpg" alt="Mamamoo" />
+            </picture>
+        </div>
+        <div class="info-festival">
+            <h2>MAMAMOO</h2>
+            <p class="fecha">Diciembre 2022, Montevideo, Uruguay</p>
+            <p>
+                Duis vel eros eu ligula malesuada facilisis id sit amet quam. Aliquam eu neque suscipit, volutpat magna
+                at, laoreet lorem. Quisque a porttitor mauris.
+            </p>
+        </div>
+
+
         
-        <ul class="navegacion-principal">
-            <li><a href="#">Grupos</a></li>
-            <li><a href="#">Galería</a></li>
-            <li><a href="#">Boletos</a></li>
-        </ul>
-    </div>
-   </header>
+    </section>
 
+    <section class="contenedor lineup">
+        <h3>Line Up</h3>
 
-   <div class="contenedor inicio">
-    <div class="titulo">
-        <h2>K-pop Festivals</h2>
-        <p>Conoce a tus idols</p>
-    </div>
-   </div>
+        <div class="fechas">
+            <div class="horarios-contenedor">
+                <p class="dia">Sabado 22</p>
+                <div class="horario">
+                    <p class="nombre-grupo">Horario Blackpink</p>
+                    <ul class="canciones">
+                        <li>
+                            20:00 | <span>DDU-DU DDU-DU</span>
+                        </li>
+                        <li>
+                            20:08 | <span>Kill This Love</span>
+                        </li>
+                        <li>
+                            20:15 | <span>Pretty Savage</span>
+                        </li>
+                        <li>
+                            20:25 | <span>HJow You Like That</span>
+                        </li>
+                        <li>
+                            20:30 | <span>Charla con Fans</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
 
-   <section class="contenedor festival">
-    <div class="img">
-        <picture>
-            <source srcset="build/img/Blackpink.webp" type="image/webp"/>
-            <img src="build/img/Blackpink.jpg" alt="Blackpink" />
-        </picture>
-    </div>
-    <div class="info-festival">
-        <h2>BLACKPINK</h2>
-        <p class="fecha">Marzo 2022, Montevideo, Uruguay</p>
-        <p>
-            Duis vel eros eu ligula malesuada facilisis id sit amet quam. Aliquam eu neque suscipit, volutpat magna at, laoreet lorem. Quisque a porttitor mauris.
-        </p>
-    </div>
-   
-    <div class="img">
-        <picture>
-            <source srcset="build/img/Twice.webp" type="image/webp" />
-            <img src="build/img/Twice.jpg" alt="Twice" />
-        </picture>
-    </div>
-    <div class="info-festival">
-        <h2>TWICE</h2>
-        <p class="fecha">Mayo 2022, Montevideo, Uruguay</p>
-        <p>
-            Duis vel eros eu ligula malesuada facilisis id sit amet quam. Aliquam eu neque suscipit, volutpat magna at, laoreet lorem. Quisque a porttitor mauris.
-        </p>
-    </div>
-  
-    <div class="img">
-        <picture>
-            <source srcset="build/img/Mamamoo.webp" type="image/webp"/>
-            <img src="build/img/Mamamoo.jpg" alt="Mamamoo" />
-        </picture>
-    </div>
-    <div class="info-festival">
-        <h2>MAMAMOO</h2>
-        <p class="fecha">Diciembre 2022, Montevideo, Uruguay</p>
-        <p>
-            Duis vel eros eu ligula malesuada facilisis id sit amet quam. Aliquam eu neque suscipit, volutpat magna at, laoreet lorem. Quisque a porttitor mauris.
-        </p>
-    </div>
+            <div class="horarios-contenedor">
+                <p class="dia">Domingo 15</p>
+                <div class="horario">
+                    <p class="nombre-grupo">Horario Twice</p>
+
+                    <ul class="canciones">
+                        <li>
+                            20:00 | <span>FANCY</span>
+                        </li>
+                        <li>
+                            20:08 | <span>Feel Special</span>
+                        </li>
+                        <li>
+                            20:15 | <span>What is Love?</span>
+                        </li>
+                        <li>
+                            20:25 | <span>I Can´t Stop Me</span>
+                        </li>
+                        <li>
+                            20:30 | <span>Charla con Fans</span>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="horarios-contenedor">
+                <p class="dia">Viernes 7</p>
+                <div class="horario">
+                    <p class="nombre-grupo">Horario Mamamoo</p>
+
+                    <ul class="canciones">
+                        <li>
+                            20:00 | <span>AYA</span>
+                        </li>
+                        <li>
+                            20:08 | <span>Egotistc</span>
+                        </li>
+                        <li>
+                            20:15 | <span>Gogobebe</span>
+                        </li>
+                        <li>
+                            20:25 | <span>HIP</span>
+                        </li>
+                        <li>
+                            20:30 | <span>Charla con Fans</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        
    </section>
    
    

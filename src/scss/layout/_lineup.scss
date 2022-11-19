@@ -1,0 +1,68 @@
+@use 'base/mixins' as m;
+@use 'base/variables' as v;
+
+.fechas {
+    margin-top: 5rem;
+    @include m.tablet {
+        @include m.grid(3, 5rem, 0);
+        gap: 4rem;
+    }
+
+}
+
+.lineup {
+    text-align: center;
+    padding: 10rem 0;
+
+
+    h3,
+    p {
+        text-align: center;
+    }
+
+    h3 {
+        font-size: 4rem;
+    }
+
+    .nombre-grupo {
+        font-weight: bold;
+    }
+
+    .dia {
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+        color: v.$rosa;
+        font-weight: bold;
+    }
+
+    .horario {
+        margin-bottom: 10rem;
+    }
+
+    ul li {
+        list-style: none;
+        font-weight: bold;
+        font-size: 1.9rem;
+    }
+
+    span {
+        font-weight: normal;
+    }
+
+    .canciones {
+        text-align: left;
+        display: inline-block;
+    }
+
+    .horarios-contenedor {
+        background-color: rgba(190, 161, 161, 0.151);
+        border-radius: 2rem;
+        padding: 1rem;
+        margin-bottom: 2rem;
+        margin: 2rem;
+
+        @include m.tablet {
+            margin: 0;
+        }
+    }
+}
