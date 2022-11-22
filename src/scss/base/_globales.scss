@@ -16,6 +16,10 @@ body {
     font-size: 1.7rem;
     background-color: v.$fondo;
     background-image: v.$fondo_gradiente;
+
+    &.fijar {
+        overflow: hidden;
+    }
 }
 
 p {
