@@ -10,10 +10,10 @@
 
 }
 
+
 .lineup {
     text-align: center;
     padding: 0rem 0rem;
-
     @include m.tablet {
         padding: 7rem 0rem;
     }
@@ -21,15 +21,15 @@
     h3,
     p {
         text-align: center;
+        color: white;   
     }
 
     h3 {
         font-size: 4rem;
         border-top: 1rem solid v.$rosa;
         display: inline-block;
-        padding-top: 7rem;
-        
-        
+        padding-top: 7rem;     
+        color: #363636;
     }
 
     .nombre-grupo {
@@ -51,27 +51,33 @@
         list-style: none;
         font-weight: bold;
         font-size: 1.9rem;
+        padding: 1.5rem;
+    }
+
+    ul {
+        padding: 0;
+    }
+
+    li:nth-child(odd){
+        background-color: rgba(190, 161, 161, 0.151);
     }
 
     span {
         font-weight: normal;
     }
 
-    .canciones {
-        text-align: left;
-        display: inline-block;
-    }
-
     .horarios-contenedor {
-        background-color: rgba(190, 161, 161, 0.151);
-        border-radius: 2rem;
-        padding: 1rem;
+        background-color: #363636;
+        padding: 1rem 0rem;
         margin-bottom: 2rem;
         margin: 3rem;
-        
+        color: white;
+        box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 
         @include m.tablet {
             margin: 0;
         }
     }
+
 }
+
