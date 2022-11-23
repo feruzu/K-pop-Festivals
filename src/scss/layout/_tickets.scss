@@ -1,0 +1,106 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+
+.tickets {
+    padding: 5rem 0;
+    h3 {
+        text-align: center;
+    }
+
+    .contenedor-tickets {
+         @include m.desktop {
+             @include m.grid(2, 5rem, 2rem)
+         }
+
+    }
+}
+
+.ticket {
+	justify-content: space-between;
+	margin: auto;
+	display: flex;
+	background: white;
+	box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+
+.album, .der {
+
+	@include m.tablet {
+		width: 25rem;
+	}
+	width: 15rem;
+	background-size: contain;
+	opacity: 0.85;
+}
+
+.admitir {
+
+	@include m.telefono {
+		height: 140px;
+		font-size: 1rem;
+	}
+
+	@include m.tablet {
+		height: 250px;
+	}
+
+    position: absolute;
+	color: v.$negro;
+    font-weight: bold;
+	height: 120px;
+    font-size: 0.7rem;
+	padding: 0 10px;
+	letter-spacing: 0.15em;
+	display: flex;
+	text-align: center;
+	justify-content: space-around;
+	writing-mode: vertical-rl;
+	transform: rotate(-180deg);
+    margin: 0;
+}
+
+
+.der {
+	border-left: 1px dashed #404040;
+}
+
+
+.ticket-info {
+	@include m.tablet {
+		padding: 2.5rem;
+	}
+	padding: 1rem;
+	
+
+	h2 {
+		@include m.tablet {
+			font-size: 3rem;
+		}
+		font-size: 1.5rem;
+		text-align: center;
+		margin-top: 1rem;
+	}
+}
+
+.date {
+	border-top: 1px solid gray;
+	border-bottom: 1px solid gray;
+	padding: 5px 0;
+	font-weight: 700;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	font-size: 1rem;
+	gap: 2rem;
+	margin: 0;
+}
+
+.date span:nth-child(2){
+	color: v.$rosa;
+}
+
+.img-qr img{
+	padding: 2.5rem;
+}
