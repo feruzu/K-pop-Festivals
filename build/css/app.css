@@ -651,13 +651,6 @@ img {
     gap: 2rem 2rem;
   }
 }
-@media (min-width: 992px) {
-  .galeria-img {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    gap: 2rem 2rem;
-  }
-}
 
 .overlay {
   position: fixed;
@@ -682,20 +675,27 @@ img {
 .tickets h3 {
   text-align: center;
 }
-@media (min-width: 992px) {
-  .tickets .contenedor-tickets {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 5rem 2rem;
-  }
+
+.ticket-general,
+.ticket-vip {
+  text-align: center;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  font-weight: 600;
 }
 
 .ticket {
-  justify-content: space-between;
-  margin: auto;
+  margin: 2rem auto;
+  width: 100%;
   display: flex;
+  justify-content: space-between;
   background: white;
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+@media (min-width: 768px) {
+  .ticket {
+    width: 80%;
+  }
 }
 
 .album, .der {
@@ -749,6 +749,7 @@ img {
   }
 }
 .ticket-info h2 {
+  margin-bottom: 1rem;
   font-size: 1.5rem;
   text-align: center;
   margin-top: 1rem;
@@ -757,6 +758,25 @@ img {
   .ticket-info h2 {
     font-size: 3rem;
   }
+}
+.ticket-info .precio {
+  margin: 0;
+  background-color: rgb(255, 6, 6);
+  color: white;
+  font-weight: 600;
+  display: inline-block;
+  padding-inline: 1rem;
+  font-size: 1.5rem;
+}
+@media (min-width: 768px) {
+  .ticket-info .precio {
+    font-size: 2rem;
+  }
+}
+.ticket-info .localidad {
+  font-weight: 600;
+  font-size: 1rem;
+  margin: 1rem 0 0 0;
 }
 
 .date {
@@ -778,4 +798,9 @@ img {
 
 .img-qr img {
   padding: 2.5rem;
+}
+
+.vip .precio {
+  background-color: #fbff00;
+  color: #262626;
 }
