@@ -7,26 +7,30 @@
     h3 {
         text-align: center;
     }
+}
 
-    .contenedor-tickets {
-         @include m.desktop {
-             @include m.grid(2, 5rem, 2rem)
-         }
-
-    }
+.ticket-general,
+.ticket-vip {
+	text-align: center;
+	font-size: 2rem;
+	letter-spacing: 2px;
+	font-weight: 600;
 }
 
 .ticket {
-	justify-content: space-between;
-	margin: auto;
+	@include m.tablet {
+		width: 80%;
+	}
+	margin: 2rem auto;
+	width: 100%;
 	display: flex;
+	justify-content: space-between;
 	background: white;
-	box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+	box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
 
 .album, .der {
-
 	@include m.tablet {
 		width: 25rem;
 	}
@@ -75,12 +79,33 @@
 	
 
 	h2 {
+		margin-bottom: 1rem;
 		@include m.tablet {
 			font-size: 3rem;
 		}
 		font-size: 1.5rem;
 		text-align: center;
 		margin-top: 1rem;
+	}
+
+	.precio {
+		margin: 0;
+		background-color: rgb(255, 6, 6);
+		color: white;
+		font-weight: 600;
+		display: inline-block;
+		padding-inline: 1rem;
+
+		@include m.tablet {
+			font-size: 2rem;
+		}
+		font-size: 1.5rem;
+	}
+
+	.localidad {
+		font-weight: 600;
+		font-size: 1rem;
+		margin: 1rem 0 0 0;
 	}
 }
 
@@ -103,4 +128,9 @@
 
 .img-qr img{
 	padding: 2.5rem;
+}
+
+.vip .precio{
+	background-color: #fbff00;
+	color:  v.$negro;
 }
