@@ -399,6 +399,8 @@ img {
   top: 2rem;
   right: 2rem;
   cursor: pointer;
+  background-color: hsl(0deg, 0%, 100%);
+  border-radius: 0.3rem;
 }
 .header ul {
   z-index: 1;
@@ -496,7 +498,7 @@ img {
   font-size: 2.6rem;
   font-weight: bold;
   margin: 0;
-  color: #e6acb6;
+  color: white;
   background-color: #262626;
   display: inline-block;
   padding: 1rem 4rem;
@@ -671,6 +673,8 @@ img {
 
 .tickets {
   padding: 5rem 0;
+  position: relative;
+  z-index: -1;
 }
 .tickets h3 {
   text-align: center;
@@ -788,7 +792,7 @@ img {
   align-items: center;
   justify-content: space-around;
   font-size: 1rem;
-  gap: 2rem;
+  gap: 1rem;
   margin: 0;
 }
 
@@ -803,4 +807,14 @@ img {
 .vip .precio {
   background-color: #fbff00;
   color: #262626;
+}
+
+.web-footer {
+  background-color: #262626;
+}
+.web-footer p {
+  margin: 0;
+  text-align: center;
+  font-size: 1.5rem;
+  color: white;
 }
