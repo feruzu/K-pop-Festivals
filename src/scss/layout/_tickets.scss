@@ -4,6 +4,8 @@
 
 .tickets {
     padding: 5rem 0;
+	position: relative;
+	z-index: -1;
     h3 {
         text-align: center;
     }
@@ -118,7 +120,7 @@
 	align-items: center;
 	justify-content: space-around;
 	font-size: 1rem;
-	gap: 2rem;
+	gap: 1rem;
 	margin: 0;
 }
 
