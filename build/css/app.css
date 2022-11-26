@@ -811,6 +811,8 @@ img {
 
 .web-footer {
   background-color: #262626;
+  padding: 3rem;
+  margin-top: 7rem;
 }
 .web-footer p {
   margin: 0;
