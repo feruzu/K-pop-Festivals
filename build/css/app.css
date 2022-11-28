@@ -402,16 +402,17 @@ img {
   cursor: pointer;
   background-color: hsl(0deg, 0%, 100%);
   border-radius: 0.3rem;
+  z-index: 2;
 }
 .header ul {
   z-index: 1;
   list-style: none;
-  padding: 0;
+  padding: 5rem 0;
   display: block;
   position: fixed;
-  top: 7rem;
+  top: 0;
   left: -100%;
-  background-color: rgb(65, 65, 65);
+  background-color: rgb(255, 255, 255);
   width: 100%;
   height: 100vh;
   right: 0;
@@ -424,6 +425,7 @@ img {
     left: 0;
     background: none;
     height: auto;
+    padding-top: 0rem;
   }
 }
 .header ul li {
@@ -442,6 +444,9 @@ img {
   transition: all 0.25s;
 }
 
+.navegacion-principal {
+  margin: 0;
+}
 @media (min-width: 768px) {
   .navegacion-principal {
     display: flex;
