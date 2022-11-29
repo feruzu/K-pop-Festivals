@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K-pop Festivals</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:wght@400;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="build/css/app.css" />
+</head>
+
+<body>
+    <header class="contenedor header">
+        <div class=" info-header">
+            <h1>K-pop Festivals</h1>
+        </div>
+        <div class="info-nav">
+            <input type="checkbox" id="check">
+            <label for="check" class="check-boton">
+                <i class="menu"><img src="./build/img/menu.svg" alt="menu"></i>
+            </label>
+
+            <ul class="navegacion-principal">
+                <li><a href="#lineup">Line Up</a></li>
+                <li><a href="#galeria">Galería</a></li>
+                <li><a href="#tickets">Tickets</a></li>
+            </ul>
+        </div>
+    </header>
+
+
+    <div class="contenedor inicio">
+        <div class="titulo">
+            <h2>K-pop Festivals</h2>
+            <p>Conoce a tus idols</p>
+        </div>
+    </div>
+
+    <section class="contenedor festival">
+        <div class="img">
+            <picture>
+                <source srcset="build/img/Blackpink.webp" type="image/webp" />
+                <img src="build/img/Blackpink.jpg" alt="Blackpink" />
+            </picture>
+        </div>
+        <div class="info-festival">
+            <h2>BLACKPINK</h2>
+            <p class="fecha">Marzo 2022, Montevideo, Uruguay</p>
+            <p>
+                Duis vel eros eu ligula malesuada facilisis id sit amet quam. Aliquam eu neque suscipit, volutpat magna
+                at, laoreet lorem. Quisque a porttitor mauris.
+            </p>
+        </div>
+
+        <div class="img">
+            <picture>
+                <source srcset="build/img/Twice.webp" type="image/webp" />
+                <img src="build/img/Twice.jpg" alt="Twice" />
+            </picture>
+        </div>
+        <div class="info-festival">
+            <h2>TWICE</h2>
+            <p class="fecha">Mayo 2022, Montevideo, Uruguay</p>
+            <p>
+                Duis vel eros eu ligula malesuada facilisis id sit amet quam. Aliquam eu neque suscipit, volutpat magna
+                at, laoreet lorem. Quisque a porttitor mauris.
+            </p>
+        </div>
+
+        <div class="img">
+            <picture>
+                <source srcset="build/img/Mamamoo.webp" type="image/webp" />
+                <img src="build/img/Mamamoo.jpg" alt="Mamamoo" />
+            </picture>
+        </div>
+        <div class="info-festival">
+            <h2>MAMAMOO</h2>
+            <p class="fecha">Diciembre 2022, Montevideo, Uruguay</p>
+            <p>
+                Duis vel eros eu ligula malesuada facilisis id sit amet quam. Aliquam eu neque suscipit, volutpat magna
+                at, laoreet lorem. Quisque a porttitor mauris.
+            </p>
+        </div>
+
+
+
+    </section>
+
+    <section id="lineup" class="contenedor lineup">
+        <h3>Line Up</h3>
+
+        <div class="fechas">
+            <div class="horarios-contenedor">
+                <p class="dia">Sabado 22</p>
+                <div class="horario">
+                    <p class="nombre-grupo">Horario Blackpink</p>
+                    <ul class="canciones">
+                        <li>
+                            20:00 | <span>DDU-DU DDU-DU</span>
+                        </li>
+                        <li>
+                            20:08 | <span>Kill This Love</span>
+                        </li>
+                        <li>
+                            20:15 | <span>Pretty Savage</span>
+                        </li>
+                        <li>
+                            20:25 | <span>HJow You Like That</span>
+                        </li>
+                        <li>
+                            20:30 | <span>Charla con Fans</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="horarios-contenedor">
+                <p class="dia">Domingo 15</p>
+                <div class="horario">
+                    <p class="nombre-grupo">Horario Twice</p>
+
+                    <ul class="canciones">
+                        <li>
+                            20:00 | <span>FANCY</span>
+                        </li>
+                        <li>
+                            20:08 | <span>Feel Special</span>
+                        </li>
+                        <li>
+                            20:15 | <span>What is Love?</span>
+                        </li>
+                        <li>
+                            20:25 | <span>I Can´t Stop Me</span>
+                        </li>
+                        <li>
+                            20:30 | <span>Charla con Fans</span>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="horarios-contenedor">
+                <p class="dia">Viernes 7</p>
+                <div class="horario">
+                    <p class="nombre-grupo">Horario Mamamoo</p>
+
+                    <ul class="canciones">
+                        <li>
+                            20:00 | <span>AYA</span>
+                        </li>
+                        <li>
+                            20:08 | <span>Egotistc</span>
+                        </li>
+                        <li>
+                            20:15 | <span>Gogobebe</span>
+                        </li>
+                        <li>
+                            20:25 | <span>HIP</span>
+                        </li>
+                        <li>
+                            20:30 | <span>Charla con Fans</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="galeria" class="contenedor galeria">
+        <h3>Galería</h3>
+        <ul class="galeria-img"></ul>
+    </section>
+
+    <section id="tickets" class="contenedor tickets">
+        <h3>Tickets</h3>
+
+        <div class="contenedor-tickets">
+            <div class="general">
+                <p class="ticket-general">Tickets General</p>
+                <div class="ticket">
+                    <div class="izq">
+                        <div class="album">
+                            <p class="admitir">ADMIT ONE</p>
+                            <picture>
+                                <source srcset="build/img/ticket/blackpink-ticket.webp" type="image/webp" />
+                                <img src="build/img/ticket/blackpink-ticket.jpg" alt="Blackpink" />
+                            </picture>
+                        </div>
+                    </div>
+                    <div class="ticket-info">
+                        <p class="date">
+                            <span>SABADO</span>
+                            <span>MARZO 22</span>
+                            <span>2022</span>
+                        </p>
+                        <h2>BLACKPINK</h2>
+                        <p class="precio">$ 3000</p>
+                        <p class="localidad">Antel Arena, Montevideo</p>
+                    </div>
+                    <div class="der">
+                        <div class="qr">
+                            <p class="admitir">ADMIT ONE</p>
+                        </div>
+                        <div class="img-qr">
+                            <picture>
+                                <source srcset="build/img/ticket/qr-blackpink.webp" type="image/webp" />
+                                <img src="build/img/ticket/qr-blackpink.png" alt="Blackpink" />
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+                <div class="ticket">
+                    <div class="izq">
+                        <div class="album">
+                            <p class="admitir">ADMIT ONE</p>
+                            <picture>
+                                <source srcset="build/img/ticket/twice-ticket.webp" type="image/webp" />
+                                <img src="build/img/ticket/twice-ticket.png" alt="Twice" />
+                            </picture>
+                        </div>
+                    </div>
+                    <div class="ticket-info">
+                        <p class="date">
+                            <span>DOMINGO</span>
+                            <span>MAYO 15</span>
+                            <span>2022</span>
+                        </p>
+                        <h2>TWICE</h2>
+                        <p class="precio">$ 3000</p>
+                        <p class="localidad">Antel Arena, Montevideo</p>
+                    </div>
+                    <div class="der">
+                        <div class="qr">
+                            <p class="admitir">ADMIT ONE</p>
+                        </div>
+                        <div class="img-qr">
+                            <picture>
+                                <source srcset="build/img/ticket/qr-twice.webp" type="image/webp" />
+                                <img src="build/img/ticket/qr-twice.png" alt="Twice" />
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+                <div class="ticket">
+                    <div class="izq">
+                        <div class="album">
+                            <p class="admitir">ADMIT ONE</p>
+                            <picture>
+                                <source srcset="build/img/ticket/mamamoo-ticket.webp" type="image/webp" />
+                                <img src="build/img/ticket/mamamoo-ticket.jpeg" alt="Mamamoo" />
+                            </picture>
+                        </div>
+                    </div>
+                    <div class="ticket-info">
+                        <p class="date">
+                            <span>VIERNES</span>
+                            <span>DICIEMBRE 7</span>
+                            <span>2022</span>
+                        </p>
+                        <h2>MAMAMOO</h2>
+                        <p class="precio">$ 3000</p>
+                        <p class="localidad">Antel Arena, Montevideo</p>
+                    </div>
+                    <div class="der">
+                        <div class="qr">
+                            <p class="admitir">ADMIT ONE</p>
+                        </div>
+                        <div class="img-qr">
+                            <picture>
+                                <source srcset="build/img/ticket/qr-mamamoo.webp" type="image/webp" />
+                                <img src="build/img/ticket/qr-mamamoo.png" alt="Mamamoo" />
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vip">
+                    <p class="ticket-vip">Tickets VIP</p>
+                    <div class="ticket">
+                        <div class="izq">
+                            <div class="album">
+                                <p class="admitir">ADMIT ONE</p>
+                                <picture>
+                                    <source srcset="build/img/ticket/blackpink-ticket.webp" type="image/webp" />
+                                    <img src="build/img/ticket/blackpink-ticket.jpg" alt="Blackpink" />
+                                </picture>
+                            </div>
+                        </div>
+                        <div class="ticket-info">
+                            <p class="date">
+                                <span>SABADO</span>
+                                <span>MARZO 22</span>
+                                <span>2022</span>
+                            </p>
+                            <h2>BLACKPINK</h2>
+                            <p class="precio">$ 7000</p>
+                            <p class="localidad">Antel Arena, Montevideo</p>
+                        </div>
+                        <div class="der">
+                            <div class="qr">
+                                <p class="admitir">ADMIT ONE</p>
+                            </div>
+
+                            <div class="img-qr">
+                                <picture>
+                                    <source srcset="build/img/ticket/qr-blackpink.webp" type="image/webp" />
+                                    <img src="build/img/ticket/qr-blackpink.png" alt="Blackpink" />
+                                </picture>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ticket">
+                        <div class="izq">
+                            <div class="album">
+                                <p class="admitir">ADMIT ONE</p>
+                                <picture>
+                                    <source srcset="build/img/ticket/twice-ticket.webp" type="image/webp" />
+                                    <img src="build/img/ticket/twice-ticket.png" alt="Twice" />
+                                </picture>
+                            </div>
+                        </div>
+                        <div class="ticket-info">
+                            <p class="date">
+                                <span>DOMINGO</span>
+                                <span>MAYO 15</span>
+                                <span>2022</span>
+                            </p>
+                            <h2>TWICE</h2>
+                            <p class="precio">$ 6900</p>
+                            <p class="localidad">Antel Arena, Montevideo</p>
+                        </div>
+                        <div class="der">
+                            <div class="qr">
+                                <p class="admitir">ADMIT ONE</p>
+                            </div>
+
+                            <div class="img-qr">
+                                <picture>
+                                    <source srcset="build/img/ticket/qr-twice.webp" type="image/webp" />
+                                    <img src="build/img/ticket/qr-twice.png" alt="Twice" />
+                                </picture>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ticket">
+                        <div class="izq">
+                            <div class="album">
+                                <p class="admitir">ADMIT ONE</p>
+                                <picture>
+                                    <source srcset="build/img/ticket/mamamoo-ticket.webp" type="image/webp" />
+                                    <img src="build/img/ticket/mamamoo-ticket.jpeg" alt="Mamamoo" />
+                                </picture>
+                            </div>
+                        </div>
+                        <div class="ticket-info">
+                            <p class="date">
+                                <span>VIERNES</span>
+                                <span>DICIEMBRE 7</span>
+                                <span>2022</span>
+                            </p>
+                            <h2>MAMAMOO</h2>
+                            <p class="precio">$ 8000</p>
+                            <p class="localidad">Antel Arena, Montevideo</p>
+                        </div>
+                        <div class="der">
+                            <div class="qr">
+                                <p class="admitir">ADMIT ONE</p>
+                            </div>
+
+                            <div class="img-qr">
+                                <picture>
+                                    <source srcset="build/img/ticket/qr-mamamoo.webp" type="image/webp" />
+                                    <img src="build/img/ticket/qr-mamamoo.png" alt="Mamamoo" />
+                                </picture>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+    </section>
+
+    <footer class="web-footer">
+        <p>&copy; K-pop Festivals</p>
+    </footer>
+
+
+
+
+    <script src="build/js/app.js"></script>
+</body>
+
+</html>

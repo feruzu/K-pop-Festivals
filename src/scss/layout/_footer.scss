@@ -1,0 +1,16 @@
+@use 'base/variables' as v;
+
+.web-footer {
+    background-color: v.$negro;
+    padding: 3rem;
+    margin-top: 7rem;
+
+    p {
+        margin: 0;
+        text-align: center;
+        font-size: 1.5rem;
+        color: white;
+    }
+}
+
+
