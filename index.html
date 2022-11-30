@@ -9,12 +9,16 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:wght@400;600;700&display=swap"
         rel="stylesheet">
-
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="build/css/app.css" />
+    
 </head>
 
 <body>
-    <header class="contenedor header">
+    <header class="contenedor header"  data-aos="fade-zoom-in"
+    data-aos-easing="ease-in-back"
+    data-aos-delay="200"
+    data-aos-offset="0">
         <div class=" info-header">
             <h1>K-pop Festivals</h1>
         </div>
@@ -32,22 +36,21 @@
         </div>
     </header>
 
-
-    <div class="contenedor inicio">
+    <div class="contenedor inicio" >
         <div class="titulo">
-            <h2>K-pop Festivals</h2>
-            <p>Conoce a tus idols</p>
+            <h2  data-aos="fade-right">K-pop Festivals</h2>
+            <p  data-aos="fade-right">Conoce a tus idols</p>
         </div>
     </div>
 
     <section class="contenedor festival">
-        <div class="img">
+        <div class="img"  data-aos="fade-right">
             <picture>
                 <source srcset="build/img/Blackpink.webp" type="image/webp" />
                 <img src="build/img/Blackpink.jpg" alt="Blackpink" />
             </picture>
         </div>
-        <div class="info-festival">
+        <div class="info-festival"  data-aos="fade-right">
             <h2>BLACKPINK</h2>
             <p class="fecha">Marzo 2022, Montevideo, Uruguay</p>
             <p>
@@ -56,13 +59,13 @@
             </p>
         </div>
 
-        <div class="img">
+        <div class="img"  data-aos="fade-right">
             <picture>
                 <source srcset="build/img/Twice.webp" type="image/webp" />
                 <img src="build/img/Twice.jpg" alt="Twice" />
             </picture>
         </div>
-        <div class="info-festival">
+        <div class="info-festival"  data-aos="fade-right">
             <h2>TWICE</h2>
             <p class="fecha">Mayo 2022, Montevideo, Uruguay</p>
             <p>
@@ -71,13 +74,13 @@
             </p>
         </div>
 
-        <div class="img">
+        <div class="img"  data-aos="fade-right">
             <picture>
                 <source srcset="build/img/Mamamoo.webp" type="image/webp" />
                 <img src="build/img/Mamamoo.jpg" alt="Mamamoo" />
             </picture>
         </div>
-        <div class="info-festival">
+        <div class="info-festival"  data-aos="fade-right">
             <h2>MAMAMOO</h2>
             <p class="fecha">Diciembre 2022, Montevideo, Uruguay</p>
             <p>
@@ -90,7 +93,7 @@
 
     </section>
 
-    <section id="lineup" class="contenedor lineup">
+    <section id="lineup" class="contenedor lineup"  data-aos="fade-right">
         <h3>Line Up</h3>
 
         <div class="fechas">
@@ -173,18 +176,18 @@
 
     </section>
 
-    <section id="galeria" class="contenedor galeria">
+    <section id="galeria" class="contenedor galeria"  data-aos="fade-right">
         <h3>Galería</h3>
         <ul class="galeria-img"></ul>
     </section>
 
     <section id="tickets" class="contenedor tickets">
-        <h3>Tickets</h3>
+        <h3  data-aos="fade-right">Tickets</h3>
 
         <div class="contenedor-tickets">
             <div class="general">
-                <p class="ticket-general">Tickets General</p>
-                <div class="ticket">
+                <p class="ticket-general"  data-aos="fade-right">Tickets General</p>
+                <div class="ticket"  data-aos="fade-right">
                     <div class="izq">
                         <div class="album">
                             <p class="admitir">ADMIT ONE</p>
@@ -216,7 +219,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="ticket">
+                <div class="ticket"  data-aos="fade-right">
                     <div class="izq">
                         <div class="album">
                             <p class="admitir">ADMIT ONE</p>
@@ -248,7 +251,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="ticket">
+                <div class="ticket"  data-aos="fade-right">
                     <div class="izq">
                         <div class="album">
                             <p class="admitir">ADMIT ONE</p>
@@ -282,8 +285,8 @@
                 </div>
 
                 <div class="vip">
-                    <p class="ticket-vip">Tickets VIP</p>
-                    <div class="ticket">
+                    <p class="ticket-vip"  data-aos="fade-right">Tickets VIP</p>
+                    <div class="ticket"  data-aos="fade-right">
                         <div class="izq">
                             <div class="album">
                                 <p class="admitir">ADMIT ONE</p>
@@ -316,7 +319,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="ticket">
+                    <div class="ticket"  data-aos="fade-right">
                         <div class="izq">
                             <div class="album">
                                 <p class="admitir">ADMIT ONE</p>
@@ -349,7 +352,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="ticket">
+                    <div class="ticket"  data-aos="fade-right">
                         <div class="izq">
                             <div class="album">
                                 <p class="admitir">ADMIT ONE</p>
@@ -390,10 +393,12 @@
         <p>&copy; K-pop Festivals</p>
     </footer>
 
-
-
-
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="build/js/app.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
